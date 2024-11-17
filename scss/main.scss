@@ -1,15 +1,144 @@
 @use './colors' as *;
 @use './media';
-@use './recipe_page';
 @use './reset';
-@use './footer';
 
-html {
-	font-size: 62.5%;
-	scroll-behavior: smooth;
+.section {
+	margin: 2em;
+
+	&__title {
+		font-family: 'Young Serif', sans-serif;
+		color: $brown;
+		font-size: 2.8rem;
+		font-weight: 400;
+		letter-spacing: 0.5px;
+	}
 }
 
-body {
-	font-family: 'Outfit', sans-serif;
-	font-size: 1.6rem;
+hr {
+	margin: 2em;
+	opacity: 0.3;
+	border-top: 1px solid $stoneExtraLight;
+}
+
+ol,
+ul {
+	margin: 0 1.5em;
+}
+
+// HEADER
+
+.header {
+	&__image {
+		width: 100%;
+	}
+
+	&__text-box {
+		margin: 2em;
+	}
+
+	&__heading {
+		font-family: 'Young Serif', sans-serif;
+		color: $stoneBold;
+		font-size: 3.4rem;
+		font-weight: 600;
+		letter-spacing: 0.5px;
+		line-height: 3.6rem;
+	}
+	&__text {
+		margin-top: 1.5em;
+		color: $stone;
+	}
+}
+
+.prep-time {
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 1.5em;
+		background-color: $roseExtraLight;
+		border-radius: 15px;
+	}
+
+	&__heading {
+		color: $rose;
+		font-size: 2rem;
+	}
+}
+
+.prep-time,
+.instructions,
+.ingredients {
+	&__list {
+		margin-top: 1em;
+	}
+
+	&__item {
+		margin-bottom: 1em;
+
+		&::marker {
+			color: $rose;
+			font-size: 1em;
+			font-weight: bold;
+		}
+	}
+
+	&__item:last-child {
+		margin-bottom: 0em;
+	}
+
+	&__text {
+		position: relative;
+		left: 1em;
+		color: $stone;
+	}
+}
+
+.prep-time,
+.instructions {
+	&__text {
+		&--span {
+			font-weight: bold;
+		}
+	}
+}
+
+.nutrition {
+	&__text {
+		margin-top: 1em;
+		color: $stone;
+	}
+
+	.table {
+		margin-top: 1em;
+		width: 100%;
+		border-collapse: collapse;
+
+		&__row {
+			position: relative;
+			left: 2em;
+			height: 2.5em;
+			color: $stone;
+			border: solid $stoneLight;
+			border-width: 1px 0;
+
+			&:first-child {
+				border-top: none;
+			}
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+
+		&__column--second {
+			color: $brown;
+			font-weight: bold;
+		}
+	}
+}
+
+.footer {
+	margin-top: 3em;
+	background-color: red;
 }

@@ -1,5 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.6rem;
+}
+
 .section {
   margin: 2em;
+}
+.section__title {
+  font-family: "Young Serif", sans-serif;
+  color: hsl(14, 45%, 36%);
+  font-size: 2.8rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+hr {
+  margin: 2em;
+  opacity: 0.3;
+  border-top: 1px solid hsl(30, 54%, 90%);
 }
 
 ol,
@@ -18,6 +49,7 @@ ul {
   color: hsl(24, 5%, 18%);
   font-size: 3.4rem;
   font-weight: 600;
+  letter-spacing: 0.5px;
   line-height: 3.6rem;
 }
 .header__text {
@@ -37,42 +69,71 @@ ul {
   color: hsl(332, 51%, 32%);
   font-size: 2rem;
 }
-.prep-time__list {
+
+.prep-time__list,
+.instructions__list,
+.ingredients__list {
   margin-top: 1em;
 }
-.prep-time__item {
+.prep-time__item,
+.instructions__item,
+.ingredients__item {
   margin-bottom: 1em;
 }
-.prep-time__item::marker {
+.prep-time__item::marker,
+.instructions__item::marker,
+.ingredients__item::marker {
   color: hsl(332, 51%, 32%);
   font-size: 1em;
+  font-weight: bold;
 }
-.prep-time__item:last-child {
+.prep-time__item:last-child,
+.instructions__item:last-child,
+.ingredients__item:last-child {
   margin-bottom: 0em;
 }
-.prep-time__text {
+.prep-time__text,
+.instructions__text,
+.ingredients__text {
   position: relative;
   left: 1em;
   color: hsl(30, 10%, 34%);
 }
-.prep-time__text--span {
+
+.prep-time__text--span,
+.instructions__text--span {
   font-weight: bold;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.nutrition__text {
+  margin-top: 1em;
+  color: hsl(30, 10%, 34%);
+}
+.nutrition .table {
+  margin-top: 1em;
+  width: 100%;
+  border-collapse: collapse;
+}
+.nutrition .table__row {
+  position: relative;
+  left: 2em;
+  height: 2.5em;
+  color: hsl(30, 10%, 34%);
+  border: solid hsl(30, 18%, 87%);
+  border-width: 1px 0;
+}
+.nutrition .table__row:first-child {
+  border-top: none;
+}
+.nutrition .table__row:last-child {
+  border-bottom: none;
+}
+.nutrition .table__column--second {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
 }
 
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Outfit", sans-serif;
-  font-size: 1.6rem;
+.footer {
+  margin-top: 3em;
+  background-color: red;
 }/*# sourceMappingURL=main.css.map */
