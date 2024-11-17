@@ -1,3 +1,25 @@
+@media (width > 768px) {
+  body {
+    background-color: hsl(30, 54%, 90%);
+  }
+  .desktop-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin: 5em auto;
+    max-width: 730px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+  }
+  .desktop-wrapper .header__img {
+    padding: 1em;
+  }
+  .desktop-wrapper .header__image {
+    border-radius: 8px;
+  }
+}
 *,
 *::before,
 *::after {
@@ -14,6 +36,10 @@ html {
 body {
   font-family: "Outfit", sans-serif;
   font-size: 1.6rem;
+}
+
+.wrapper {
+  min-width: 270px;
 }
 
 .section {
@@ -133,7 +159,22 @@ ul {
   font-weight: bold;
 }
 
-.footer {
-  margin-top: 3em;
-  background-color: red;
+.footer__links {
+  padding: 30px 20px;
+  color: hsl(30, 10%, 34%);
+  background-color: hsl(330, 100%, 98%);
+  border-top: 3px solid hsl(332, 51%, 32%);
+  text-align: center;
+}
+.footer__links a {
+  color: hsl(30, 10%, 34%);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.footer__links a:hover,
+.footer__links a:focus {
+  outline: none;
+  color: hsl(332, 51%, 32%);
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

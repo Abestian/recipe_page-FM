@@ -1,0 +1,27 @@
+@use './colors' as *;
+
+@media (width > 768px) {
+	body {
+		background-color: $stoneExtraLight;
+	}
+
+	.desktop-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 1em;
+		margin: 5em auto;
+		max-width: 730px;
+		background-color: $white;
+		border-radius: 20px;
+
+		.header__img {
+			padding: 1em;
+		}
+
+		.header__image {
+			border-radius: 8px;
+		}
+	}
+}
