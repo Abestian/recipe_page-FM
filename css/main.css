@@ -1,3 +1,30 @@
+.section {
+  margin: 2em 1.5em;
+}
+
+ol,
+ul {
+  margin: 1.5em;
+}
+
+.header__image {
+  width: 100%;
+}
+.header__text-box {
+  margin: 2em 1.5em;
+}
+.header__heading {
+  font-family: "Young Serif", sans-serif;
+  color: hsl(24, 5%, 18%);
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 3.6rem;
+}
+.header__text {
+  margin-top: 1.5em;
+  color: hsl(30, 10%, 34%);
+}
+
 *,
 *::before,
 *::after {
@@ -8,4 +35,10 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.6rem;
 }/*# sourceMappingURL=main.css.map */
